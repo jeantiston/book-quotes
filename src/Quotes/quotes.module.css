@@ -1,0 +1,136 @@
+.form{
+    margin: 10px 20px 0; /*  */
+}
+
+.input{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.button{
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100px;
+    background-color: #3898ec;
+    border: none; /* */
+    border-radius: 2px; /* */
+}
+
+.quoteBox{
+    margin: 10px 20px 0;
+    border: black solid 1px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteBox > * {
+    flex: 1;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+}
+
+.shippingChannel{
+    font-size: 14px;
+    padding: 5px; /* */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: black 1px solid;
+}
+
+.shippingIcon{
+    font-size: 50px;
+    color: #007AFF;  /* */
+}
+
+.bodyDeliver{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* */
+    text-align: center; /* */
+}
+
+
+.deliveryDays{
+    font-family: sans-serif;
+    color: #4129c7;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.estimatedDelivery{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 10px 0; /* */
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+}
+
+.destination{
+    background-color: blue; /* */
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotePrice{
+    flex: 1;
+    font-size: 40px;
+    font-family: sans-serif;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Desktop */
+    .quoteBox{
+        height: auto;
+        flex-direction: row;
+    }
+
+    .col1{
+        flex: 1; /* */
+    }
+
+    .col2{
+        flex: 2; /* */
+    }
+
+    .shippingChannel{
+        justify-content: flex-start;
+    }
+
+    .bodyDeliver{
+        height: auto;
+    }
+
+    .destination{
+        height: 20%;
+    }
+
+    .quotePrice{
+        border-left: black solid 1px;
+        height: 80%;
+    }
+
+}
+
+/* Items with the mark were not explicitly indicated in the UI spec 
+but I tried to make it look as close to the illustration as possible*/
